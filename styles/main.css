@@ -504,12 +504,14 @@ h1, h2, h3, h4, h5, h6 {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background:
+  background-image:
     linear-gradient(160deg,
       rgba(28,40,20,.88) 0%,
       rgba(42,95,30,.72) 45%,
       rgba(139,94,60,.55) 100%),
-    linear-gradient(135deg, #1d3a0f 0%, #2A5F1E 40%, #5a7a30 70%, #8B5E3C 100%);
+    url('../images/hero/hero2.jpg');
+  background-size: cover;
+  background-position: center;
   z-index: 0;
 }
 
