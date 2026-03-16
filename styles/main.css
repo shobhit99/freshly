@@ -275,11 +275,13 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   z-index: 1000;
   height: var(--nav-height);
+  background: var(--color-white);
+  box-shadow: 0 2px 20px rgba(0,0,0,.10);
   transition: background var(--transition), box-shadow var(--transition);
 }
 
 .nav.transparent {
-  background: transparent;
+  background: var(--color-white);
 }
 
 .nav.scrolled,
@@ -302,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-primary);
   transition: color var(--transition);
   text-decoration: none;
 }
@@ -339,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav__link {
   font-size: .92rem;
   font-weight: 500;
-  color: rgba(255,255,255,.9);
+  color: var(--color-text);
   transition: color var(--transition);
   position: relative;
   padding-bottom: 2px;
@@ -363,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__link:hover,
 .nav__link.active {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .nav.scrolled .nav__link,
