@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /private/tmp/claude-501/-Users-shobhit-Documents-projects-workview-os-freshly/d600ec1f-5da9-429d-8ce6-a0f884aa70de/tasks/*.output)",
+      "Bash(find /Users/shobhit/Documents/projects/workview-os/freshly/v1 -type f -name *.html -o -name *.css -o -name *.js)",
+      "Bash(find /Users/shobhit/Documents/projects/workview-os/freshly/v2 -type f -name *.html -o -name *.css -o -name *.js)",
+      "Bash(find /Users/shobhit/Documents/projects/workview-os/freshly/v3 -type f -name *.html -o -name *.css -o -name *.js)",
+      "Bash(sort -t/ -k10)",
+      "Bash(grep -rn 'img-placeholder\\\\|placeholder' /Users/shobhit/Documents/projects/workview-os/freshly/v1/*.html)",
+      "Bash(grep -rn 'img-placeholder\\\\|placeholder' /Users/shobhit/Documents/projects/workview-os/freshly/v2/*.html)",
+      "Bash(grep -rn 'img-placeholder\\\\|placeholder' /Users/shobhit/Documents/projects/workview-os/freshly/v3/*.html)",
+      "Bash(mkdir -p site)",
+      "Bash(curl -sL -o site/hero-main.jpg \"https://freshlymulched.com/wp-content/uploads/2025/01/07040278-9b53-43d5-906e-b2a42d1d425f-1024x1024.jpg\")",
+      "Bash(curl -sL -o site/service-1.jpg \"https://freshlymulched.com/wp-content/uploads/2025/01/365d1361-6f59-43a6-b465-639fbbd6d804.jpg\")",
+      "Bash(curl -sL -o site/service-2.jpg \"https://freshlymulched.com/wp-content/uploads/2025/01/7b809990-9efb-4d73-b52d-020793052a1e.jpg\")",
+      "Bash(curl -sL -o site/logo.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2024/03/cropped-Untitled-5_0000_7e88b6e6-1a48-4c43-9952-5b0511c2b171.jpg?fit=144%2C139&ssl=1\")",
+      "Bash(curl -sL -o gallery-01.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240418_093237-1024x1024.jpg\")",
+      "Bash(curl -sL -o gallery-02.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240422_091509-1024x1024.jpg\")",
+      "Bash(curl -sL -o gallery-03.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240511_134806-1024x1024.jpg\")",
+      "Bash(curl -sL -o gallery-04.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240514_065537-1024x1024.jpg\")",
+      "Bash(curl -sL -o gallery-05.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240517_065142-1024x1024.jpg\")",
+      "Bash(curl -sL -o gallery-06.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240530_081615-1024x1024.jpg\")",
+      "Bash(curl -sL -o gallery-07.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240603_071937-1024x1024.jpg\")",
+      "Bash(curl -sL -o gallery-08.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240604_160532-1024x1024.jpg\")",
+      "Bash(curl -sL -o gallery-09.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240606_132434-1024x1024.jpg\")",
+      "Bash(curl -sL -o gallery-10.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240717_114152-1024x1024.jpg\")",
+      "Bash(curl -sL -o project-01.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/acaeec69-0f9e-428a-8666-d4b09182b5cb.jpg\")",
+      "Bash(curl -sL -o project-02.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/af8b8a66-ed6d-479f-916f-ab44231cbd92.jpg\")",
+      "Bash(curl -sL -o project-03.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/ab9642d0-0312-4f00-84c5-bcb4c38ca578.jpg\")",
+      "Bash(curl -sL -o project-04.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/f7946a26-c05c-47b7-8911-0bcd99a6fbae.jpg\")",
+      "Bash(curl -sL -o project-05.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/dbdc2462-cb77-47b0-b2af-10b5b40410c4.jpg\")",
+      "Bash(curl -sL -o project-06.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/61ff54e2-8bd7-4d36-8c6f-b578c132119d.jpg\")",
+      "Bash(curl -sL -o before-after-1.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240422_103239.jpg\")",
+      "Bash(curl -sL -o before-after-2.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240422_110529.jpg\")",
+      "Bash(curl -sL -o project-07.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/f4a18181-3a6b-48c3-886d-561c829e32c0.jpg\")",
+      "Bash(curl -sL -o project-08.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/902cbbaf-f15f-443a-a113-ff2301e64376.jpg\")",
+      "Bash(curl -sL -o project-09.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240507_124855-1-rotated.jpg\")",
+      "Bash(curl -sL -o project-10.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/03/20240507_131849-rotated.jpg\")",
+      "Bash(curl -sL -o project-11.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/cc0d89ee-4b9c-488b-bdd6-03b49ef46f61.jpg\")",
+      "Bash(curl -sL -o project-12.jpg \"https://i0.wp.com/freshlymulched.com/wp-content/uploads/2025/01/7744e419-c933-431c-a840-3ca544b8a1ca.jpg\")"
+    ]
+  }
+}
