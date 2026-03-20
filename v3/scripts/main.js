@@ -320,7 +320,55 @@
   });
 
   /* ──────────────────────────────────────────────
-     10. CURRENT YEAR IN FOOTER
+     10. BEFORE / AFTER SLIDER
+  ────────────────────────────────────────────── */
+  document.querySelectorAll('[data-ba-slider]').forEach(slider => {
+    const beforeImg = slider.querySelector('.ba-slider__before');
+    const handle    = slider.querySelector('.ba-slider__handle');
+    if (!beforeImg || !handle) return;
+
+    let isDragging = false;
+
+    function setPosition(x) {
+      const rect = slider.getBoundingClientRect();
+      let pct = ((x - rect.left) / rect.width) * 100;
+      pct = Math.max(0, Math.min(100, pct));
+      beforeImg.style.clipPath = 'inset(0 ' + (100 - pct) + '% 0 0)';
+      handle.style.left = pct + '%';
+    }
+
+    slider.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      isDragging = true;
+      setPosition(e.clientX);
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      setPosition(e.clientX);
+    });
+
+    window.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+
+    slider.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      setPosition(e.touches[0].clientX);
+    }, { passive: true });
+
+    slider.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      setPosition(e.touches[0].clientX);
+    }, { passive: true });
+
+    slider.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+  });
+
+  /* ──────────────────────────────────────────────
+     11. CURRENT YEAR IN FOOTER
   ────────────────────────────────────────────── */
   const yearSpans = document.querySelectorAll('.js-year');
   const thisYear  = new Date().getFullYear();
