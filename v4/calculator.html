@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="See the transformations — before and after photos of Freshly Mulched landscaping projects. Mulch delivery, landscape installation, and property cleanup results." />
-  <meta name="keywords" content="mulch before after, landscaping transformation, Freshly Mulched projects, landscape installation results" />
-  <meta property="og:title" content="Our Work — Freshly Mulched" />
-  <meta property="og:description" content="Browse before and after photos of our mulch delivery and landscaping projects throughout the Columbus area." />
-  <title>Our Work — Freshly Mulched</title>
+  <meta name="description" content="Use our free mulch calculator to estimate how much mulch or soil you need. Add multiple areas and get instant results in cubic yards." />
+  <meta name="keywords" content="mulch calculator, soil calculator, cubic yards calculator, landscaping calculator" />
+  <meta property="og:title" content="Mulch &amp; Soil Calculator — Freshly Mulched" />
+  <meta property="og:description" content="Estimate how much mulch or soil you need for your landscaping project with our free calculator." />
+  <title>Mulch &amp; Soil Calculator — Freshly Mulched</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -62,100 +62,104 @@
     <!-- ═══════════════════════════════════════════
          PAGE HERO
     ═══════════════════════════════════════════ -->
-    <section class="page-hero" aria-label="Our Work page hero">
+    <section class="page-hero" aria-label="Calculator page hero">
       <div class="container page-hero__content">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Home</a>
           <span aria-hidden="true">&rsaquo;</span>
-          <span aria-current="page">Our Work</span>
+          <span aria-current="page">Calculator</span>
         </nav>
-        <h1 class="page-hero__title">Our Work</h1>
+        <h1 class="page-hero__title">Mulch &amp; Soil Calculator</h1>
         <p class="page-hero__subtitle">
-          Browse before and after photos from our recent projects. Drag the slider
-          on each image to see the full transformation.
+          Estimate how much material you need for your project. Add each bed or section
+          separately for an accurate total.
         </p>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════
-         BEFORE / AFTER GALLERY
+         CALCULATOR
     ═══════════════════════════════════════════ -->
-    <section class="section" aria-labelledby="work-gallery-title">
+    <section class="section" aria-labelledby="calc-title">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Before &amp; After</span>
-          <h2 class="section-title" id="work-gallery-title">Real Results, Real Properties</h2>
-          <p class="section-subtitle">
-            Every project starts with a vision and ends with a transformation. Drag the
-            slider to compare before and after on each project below.
-          </p>
-        </div>
+        <div class="calc-wrapper">
 
-        <div class="work-grid">
-          <div class="ba-slider reveal" data-ba-slider>
-            <img src="../images/work/before-1.jpg" alt="Before mulching - project 1" class="ba-slider__before" />
-            <img src="../images/work/after-1.jpg" alt="After mulching - project 1" class="ba-slider__after" />
-            <div class="ba-slider__handle"></div>
-            <span class="ba-slider__label ba-slider__label--before">Before</span>
-            <span class="ba-slider__label ba-slider__label--after">After</span>
+          <h2 class="calc-heading" id="calc-title">Mulch &amp; Soil Calculator</h2>
+
+          <div class="calc-field">
+            <label class="calc-label" for="calc-material">Material</label>
+            <select id="calc-material" class="calc-input">
+              <option value="mulch">Mulch</option>
+              <option value="soil">Soil</option>
+              <option value="compost">Compost</option>
+              <option value="gravel">Gravel</option>
+            </select>
           </div>
 
-          <div class="ba-slider reveal" data-ba-slider>
-            <img src="../images/work/before-2.jpg" alt="Before mulching - project 2" class="ba-slider__before" />
-            <img src="../images/work/after-2.jpg" alt="After mulching - project 2" class="ba-slider__after" />
-            <div class="ba-slider__handle"></div>
-            <span class="ba-slider__label ba-slider__label--before">Before</span>
-            <span class="ba-slider__label ba-slider__label--after">After</span>
+          <div class="calc-field">
+            <label class="calc-label" for="calc-depth">Depth (inches)</label>
+            <input type="number" id="calc-depth" class="calc-input" value="3" min="0.5" step="0.5" />
+            <span class="calc-hint">Common mulch depth: 2–3 inches</span>
           </div>
 
-          <div class="ba-slider reveal" data-ba-slider>
-            <img src="../images/work/before-3.jpg" alt="Before mulching - project 3" class="ba-slider__before" />
-            <img src="../images/work/after-3.jpg" alt="After mulching - project 3" class="ba-slider__after" />
-            <div class="ba-slider__handle"></div>
-            <span class="ba-slider__label ba-slider__label--before">Before</span>
-            <span class="ba-slider__label ba-slider__label--after">After</span>
+          <div class="calc-field">
+            <label class="calc-label">Areas (add each bed/section)</label>
+            <div class="calc-areas" id="calc-areas">
+              <div class="calc-area-row">
+                <div class="calc-area-input">
+                  <label class="calc-area-label">Length (ft)</label>
+                  <input type="number" class="calc-input area-length" placeholder="e.g. 10" min="0" step="any" />
+                </div>
+                <div class="calc-area-input">
+                  <label class="calc-area-label">Width (ft)</label>
+                  <input type="number" class="calc-input area-width" placeholder="e.g. 12" min="0" step="any" />
+                </div>
+                <button type="button" class="calc-area-remove" aria-label="Remove area" title="Remove area">&times;</button>
+              </div>
+            </div>
+            <button type="button" class="calc-add-area" id="calc-add-area">+ Add Area</button>
           </div>
 
-          <div class="ba-slider reveal" data-ba-slider>
-            <img src="../images/work/before-4.jpg" alt="Before mulching - project 4" class="ba-slider__before" />
-            <img src="../images/work/after-4.jpg" alt="After mulching - project 4" class="ba-slider__after" />
-            <div class="ba-slider__handle"></div>
-            <span class="ba-slider__label ba-slider__label--before">Before</span>
-            <span class="ba-slider__label ba-slider__label--after">After</span>
+          <div class="calc-actions">
+            <button type="button" class="btn btn--primary btn--lg calc-btn-calculate" id="calc-btn">Calculate</button>
+            <button type="button" class="btn btn--outline btn--lg calc-btn-reset" id="calc-reset">Reset</button>
           </div>
 
-          <div class="ba-slider reveal" data-ba-slider>
-            <img src="../images/work/before-5.jpg" alt="Before mulching - project 5" class="ba-slider__before" />
-            <img src="../images/work/after-5.jpg" alt="After mulching - project 5" class="ba-slider__after" />
-            <div class="ba-slider__handle"></div>
-            <span class="ba-slider__label ba-slider__label--before">Before</span>
-            <span class="ba-slider__label ba-slider__label--after">After</span>
+          <div class="calc-results" id="calc-results">
+            <div class="calc-results__grid">
+              <div class="calc-result-item">
+                <span class="calc-result-item__value" id="result-area">0</span>
+                <span class="calc-result-item__label">Total Sq Ft</span>
+              </div>
+              <div class="calc-result-item calc-result-item--highlight">
+                <span class="calc-result-item__value" id="result-yards">0</span>
+                <span class="calc-result-item__label">Cubic Yards Needed</span>
+              </div>
+              <div class="calc-result-item">
+                <span class="calc-result-item__value" id="result-bags">0</span>
+                <span class="calc-result-item__label">Bags (2 cu ft)</span>
+              </div>
+            </div>
           </div>
 
-          <div class="ba-slider reveal" data-ba-slider>
-            <img src="../images/work/before-6.jpg" alt="Before mulching - project 6" class="ba-slider__before" />
-            <img src="../images/work/after-6.jpg" alt="After mulching - project 6" class="ba-slider__after" />
-            <div class="ba-slider__handle"></div>
-            <span class="ba-slider__label ba-slider__label--before">Before</span>
-            <span class="ba-slider__label ba-slider__label--after">After</span>
-          </div>
+          <p class="calc-disclaimer">This tool provides estimates only. We recommend ordering 5–10% extra to account for settling and irregular areas.</p>
+
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         CTA BANNER
-    ═══════════════════════════════════════════ -->
-    <section class="cta-banner" aria-labelledby="work-cta-title">
-      <div class="container" style="position:relative;z-index:1;">
-        <h2 class="cta-banner__title" id="work-cta-title">Ready to Transform Your Yard?</h2>
-        <p class="cta-banner__subtitle">
-          Get a free, no-obligation quote today. We'll help you find the right products and
-          create a beautiful outdoor space you'll love.
+    <!-- CTA SECTION -->
+    <section class="section section--alt" aria-label="Call to action">
+      <div class="container" style="text-align:center;max-width:640px;">
+        <span class="section-label">Ready to Order?</span>
+        <h2 class="section-title">Get Your Mulch Delivered</h2>
+        <p class="section-subtitle" style="margin-inline:auto;">
+          Now that you know how much you need, let us handle the rest. We deliver premium mulch
+          right to your property.
         </p>
-        <div class="btn-group centered" style="justify-content:center;">
-          <a href="contact.html" class="btn btn--accent btn--lg">Get a Free Quote</a>
-          <a href="services.html" class="btn btn--outline btn--lg">View Our Services</a>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;">
+          <a href="products.html" class="btn btn--primary btn--lg">Browse Products</a>
+          <a href="contact.html" class="btn btn--outline btn--lg">Get a Quote</a>
         </div>
       </div>
     </section>
@@ -182,7 +186,6 @@
           <ul class="footer__links">
             <li><a href="index.html" class="footer__link">Home</a></li>
             <li><a href="services.html" class="footer__link">Services</a></li>
-            <li><a href="work.html" class="footer__link">Our Work</a></li>
             <li><a href="products.html" class="footer__link">Products</a></li>
             <li><a href="about.html" class="footer__link">About Us</a></li>
             <li><a href="contact.html" class="footer__link">Contact</a></li>
@@ -208,8 +211,12 @@
             <span><a href="mailto:hello@freshlymulched.com">hello@freshlymulched.com</a></span>
           </div>
           <div class="footer__contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>1420 Greenway Blvd, Suite 101<br>Columbus, OH 43215</span>
+          </div>
+          <div class="footer__contact-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>Mon-Fri: 7AM-6PM · Sat: 8AM-4PM</span>
+            <span>Mon–Fri: 7AM–6PM · Sat: 8AM–4PM</span>
           </div>
         </div>
       </div>
@@ -224,5 +231,63 @@
   </footer>
 
   <script src="scripts/main.js"></script>
+  <script>
+  (function() {
+    var areasContainer = document.getElementById('calc-areas');
+    var addBtn = document.getElementById('calc-add-area');
+    var calcBtn = document.getElementById('calc-btn');
+    var resetBtn = document.getElementById('calc-reset');
+    var results = document.getElementById('calc-results');
+
+    function createRow() {
+      var row = document.createElement('div');
+      row.className = 'calc-area-row';
+      row.innerHTML =
+        '<div class="calc-area-input">' +
+          '<label class="calc-area-label">Length (ft)</label>' +
+          '<input type="number" class="calc-input area-length" placeholder="e.g. 10" min="0" step="any" />' +
+        '</div>' +
+        '<div class="calc-area-input">' +
+          '<label class="calc-area-label">Width (ft)</label>' +
+          '<input type="number" class="calc-input area-width" placeholder="e.g. 12" min="0" step="any" />' +
+        '</div>' +
+        '<button type="button" class="calc-area-remove" aria-label="Remove area" title="Remove area">&times;</button>';
+      return row;
+    }
+
+    addBtn.addEventListener('click', function() { areasContainer.appendChild(createRow()); });
+
+    areasContainer.addEventListener('click', function(e) {
+      if (e.target.closest('.calc-area-remove')) {
+        if (areasContainer.querySelectorAll('.calc-area-row').length > 1) {
+          e.target.closest('.calc-area-row').remove();
+        }
+      }
+    });
+
+    calcBtn.addEventListener('click', function() {
+      var totalArea = 0;
+      areasContainer.querySelectorAll('.calc-area-row').forEach(function(row) {
+        var l = parseFloat(row.querySelector('.area-length').value) || 0;
+        var w = parseFloat(row.querySelector('.area-width').value) || 0;
+        totalArea += l * w;
+      });
+      var depth = parseFloat(document.getElementById('calc-depth').value) || 3;
+      var volumeCuFt = totalArea * (depth / 12);
+      document.getElementById('result-area').textContent = totalArea.toFixed(1);
+      document.getElementById('result-yards').textContent = (volumeCuFt / 27).toFixed(2);
+      document.getElementById('result-bags').textContent = Math.ceil(volumeCuFt / 2);
+      results.classList.add('visible');
+    });
+
+    resetBtn.addEventListener('click', function() {
+      document.getElementById('calc-material').selectedIndex = 0;
+      document.getElementById('calc-depth').value = '3';
+      areasContainer.innerHTML = '';
+      areasContainer.appendChild(createRow());
+      results.classList.remove('visible');
+    });
+  })();
+  </script>
 </body>
 </html>
