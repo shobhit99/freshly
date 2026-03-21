@@ -120,23 +120,23 @@
           </div>
 
           <div class="calc-results" id="calc-results">
-            <div class="calc-results__grid">
-              <div class="calc-result-item">
-                <span class="calc-result-item__value" id="result-area">0</span>
-                <span class="calc-result-item__label">Total Sq Ft</span>
-              </div>
-              <div class="calc-result-item calc-result-item--highlight">
-                <span class="calc-result-item__value" id="result-yards">0</span>
-                <span class="calc-result-item__label">Cubic Yards Needed</span>
-              </div>
-              <div class="calc-result-item">
-                <span class="calc-result-item__value" id="result-bags">0</span>
-                <span class="calc-result-item__label">Bags (2 cu ft)</span>
-              </div>
+            <div class="calc-results__summary">
+              <p><strong>Total Area:</strong> <span id="result-area">0</span> sq ft</p>
+              <p><strong>Depth:</strong> <span id="result-depth">3</span> in</p>
             </div>
+            <p class="calc-results__volume">Total Volume: <span class="calc-results__highlight" id="result-yards">0.00</span> cubic yards</p>
+            <p class="calc-results__cuft">(<span id="result-cuft">0</span> cubic feet)</p>
+            <table class="calc-results__table">
+              <thead><tr><th>Bag Size</th><th>Estimated Bags</th></tr></thead>
+              <tbody>
+                <tr><td>1 cu ft</td><td id="result-bags-1">0</td></tr>
+                <tr><td>1.5 cu ft</td><td id="result-bags-15">0</td></tr>
+                <tr><td>2 cu ft</td><td id="result-bags-2">0</td></tr>
+              </tbody>
+            </table>
           </div>
 
-          <p class="calc-disclaimer">This tool provides estimates only. We recommend ordering 5–10% extra to account for settling and irregular areas.</p>
+          <p class="calc-disclaimer">This tool provides estimates only.</p>
 
         </div>
       </div>
@@ -265,9 +265,15 @@
       });
       var depth = parseFloat(document.getElementById('calc-depth').value) || 3;
       var volumeCuFt = totalArea * (depth / 12);
+      var cubicYards = volumeCuFt / 27;
+
       document.getElementById('result-area').textContent = totalArea.toFixed(1);
-      document.getElementById('result-yards').textContent = (volumeCuFt / 27).toFixed(2);
-      document.getElementById('result-bags').textContent = Math.ceil(volumeCuFt / 2);
+      document.getElementById('result-depth').textContent = depth;
+      document.getElementById('result-yards').textContent = cubicYards.toFixed(2);
+      document.getElementById('result-cuft').textContent = Math.round(volumeCuFt);
+      document.getElementById('result-bags-1').textContent = Math.ceil(volumeCuFt / 1);
+      document.getElementById('result-bags-15').textContent = Math.ceil(volumeCuFt / 1.5);
+      document.getElementById('result-bags-2').textContent = Math.ceil(volumeCuFt / 2);
       results.classList.add('visible');
     });
 

@@ -2299,47 +2299,61 @@ select.calc-input {
 /* Results */
 .calc-results {
   margin-bottom: 1.5rem;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity .4s ease, transform .4s ease;
 }
-.calc-results.visible {
-  opacity: 1;
-  transform: translateY(0);
+.calc-results.visible { opacity: 1; transform: translateY(0); }
+.calc-results__summary {
+  margin-bottom: 1.5rem;
 }
-.calc-results__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-.calc-result-item {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: 1.25rem .75rem;
-  text-align: center;
-}
-.calc-result-item__value {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 1.75rem;
+.calc-results__summary p {
+  font-size: 1rem;
   color: var(--color-dark);
-  line-height: 1.1;
   margin-bottom: .25rem;
 }
-.calc-result-item__label {
-  font-size: .72rem;
-  font-weight: 500;
+.calc-results__volume {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--color-dark);
+  margin-bottom: .35rem;
+}
+.calc-results__highlight {
+  color: #c0392b;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.calc-results__cuft {
+  font-size: .95rem;
+  font-style: italic;
   color: var(--color-text-light);
-  text-transform: uppercase;
-  letter-spacing: .04em;
+  margin-bottom: 1.25rem;
 }
-.calc-result-item--highlight {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
+.calc-results__table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
 }
-.calc-result-item--highlight .calc-result-item__value { color: var(--color-white); }
-.calc-result-item--highlight .calc-result-item__label { color: rgba(255,255,255,.7); }
+.calc-results__table th,
+.calc-results__table td {
+  padding: .75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  font-size: .93rem;
+}
+.calc-results__table th {
+  background: var(--color-bg);
+  font-weight: 600;
+  color: var(--color-dark);
+}
+.calc-results__table td { color: var(--color-text); }
+.calc-results__table tr:last-child td { border-bottom: none; }
 
 .calc-disclaimer {
   font-size: .82rem;
