@@ -228,13 +228,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn--outline {
   background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn--outline:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+/* White outline variant for dark/image backgrounds */
+.hero .btn--outline,
+.footer .btn--outline,
+.section--dark .btn--outline {
   color: var(--color-white);
   border-color: var(--color-white);
 }
-.btn--outline:hover {
+.hero .btn--outline:hover,
+.footer .btn--outline:hover,
+.section--dark .btn--outline:hover {
   background: var(--color-white);
   color: var(--color-primary);
-  transform: translateY(-2px);
 }
 
 .btn--outline-green {
@@ -511,7 +524,7 @@ h1, h2, h3, h4, h5, h6 {
       rgba(28,40,20,.88) 0%,
       rgba(42,95,30,.72) 45%,
       rgba(139,94,60,.55) 100%),
-    url('../images/hero/hero2.jpg');
+    url('../../images/hero/hero2.jpg');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -618,10 +631,12 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   background:
     linear-gradient(160deg,
-      rgba(20,35,15,.90) 0%,
-      rgba(42,95,30,.78) 55%,
-      rgba(100,70,40,.65) 100%),
-    linear-gradient(130deg, #1a3410 0%, #2A5F1E 55%, #8B5E3C 100%);
+      rgba(20,35,15,.88) 0%,
+      rgba(42,95,30,.80) 55%,
+      rgba(100,70,40,.68) 100%),
+    url('../../images/hero/hero2.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .page-hero::after {
