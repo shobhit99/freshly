@@ -2335,10 +2335,11 @@ select.calc-input { cursor: pointer; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem;
+  display: none;
   opacity: 0; transform: translateY(10px);
   transition: opacity .4s ease, transform .4s ease;
 }
-.calc-results.visible { opacity: 1; transform: translateY(0); }
+.calc-results.visible { display: block; opacity: 1; transform: translateY(0); }
 .calc-results__summary { margin-bottom: 1.5rem; }
 .calc-results__summary p { font-size: 1rem; color: var(--text-primary); margin-bottom: .25rem; }
 .calc-results__volume {

@@ -2281,10 +2281,11 @@ select.calc-input { cursor: pointer; }
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 32px;
+  display: none;
   opacity: 0; transform: translateY(8px);
   transition: opacity .3s ease, transform .3s ease;
 }
-.calc-results.visible { opacity: 1; transform: translateY(0); }
+.calc-results.visible { display: block; opacity: 1; transform: translateY(0); }
 .calc-results__summary { margin-bottom: 24px; }
 .calc-results__summary p { font-size: .9375rem; color: var(--dark); margin-bottom: 4px; }
 .calc-results__volume {
