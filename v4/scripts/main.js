@@ -236,7 +236,7 @@
         successMsg.innerHTML = `
           <strong>Thank you! Your message has been received.</strong><br>
           We'll be in touch within 1 business day. For urgent requests,
-          call us at <a href="tel:+15555551234" style="color:var(--color-primary);font-weight:600;">(555) 555-1234</a>.
+          call us at <a href="tel:+16129991517" style="color:var(--color-primary);font-weight:600;">(612) 999-1517</a>.
         `;
 
         form.appendChild(successMsg);

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shop premium mulch, topsoil, gravel, compost and more from Freshly Mulched. Quality landscaping materials delivered to your door in the Columbus, OH area." />
-  <meta name="keywords" content="buy mulch, hardwood mulch, black mulch, topsoil delivery, pea gravel, garden compost, landscaping materials Columbus" />
+  <meta name="description" content="Shop premium mulch from Freshly Mulched. Natural hardwood, black dyed, red dyed, gold dyed, dark chocolate brown, and western cedar mulch delivered in Minneapolis Metro." />
+  <meta name="keywords" content="buy mulch, hardwood mulch, black mulch, red mulch, gold mulch, cedar mulch, mulch delivery Minneapolis" />
   <meta property="og:title" content="Products — Freshly Mulched" />
-  <meta property="og:description" content="Browse our full selection of premium mulch, topsoil, gravel, compost and decorative stone. Starting at $45/cubic yard." />
+  <meta property="og:description" content="Browse our full selection of premium mulch. Starting at $45/cubic yard. Serving Minneapolis Metro." />
   <title>Products — Freshly Mulched</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
   <nav class="nav solid" id="main-nav" aria-label="Main navigation">
     <div class="container nav__inner">
       <a href="index.html" class="nav__logo">
-        <img src="../images/logo.png" alt="Freshly Mulched" style="height:80px;width:150px;object-fit:contain;border-radius:4px;" />
+        <img src="../images/logo.jpg" alt="Freshly Mulched" style="height:80px;width:150px;object-fit:contain;border-radius:4px;" />
         Freshly Mulched
       </a>
       <ul class="nav__links" role="list">
@@ -65,8 +65,7 @@
         </nav>
         <h1 class="page-hero__title">Our Products</h1>
         <p class="page-hero__subtitle">
-          Premium mulch, topsoil, gravel, compost, and decorative stone — all available
-          for bulk delivery throughout the greater Columbus area.
+          Premium mulch — all available for bulk delivery throughout the Minneapolis Metro area.
         </p>
       </div>
     </section>
@@ -81,24 +80,32 @@
           <h2 class="section-title" id="products-title">Quality Materials for Every Project</h2>
           <p class="section-subtitle">
             All products are sold by the cubic yard and delivered fresh. Call us at
-            <a href="tel:+15555551234" style="color:var(--color-primary);font-weight:700;">(555) 555-1234</a>
+            <a href="tel:+16129991517" style="color:var(--color-primary);font-weight:700;">(612) 999-1517</a>
             to calculate how much you need.
           </p>
-        </div>
-
-        <!-- Filter bar -->
-        <div class="filter-bar" role="group" aria-label="Filter products by category">
-          <button class="filter-btn active" data-filter="all" aria-pressed="true">All Products</button>
-          <button class="filter-btn" data-filter="mulch" aria-pressed="false">Mulch</button>
-          <button class="filter-btn" data-filter="topsoil" aria-pressed="false">Topsoil</button>
-          <button class="filter-btn" data-filter="gravel" aria-pressed="false">Gravel &amp; Stone</button>
-          <button class="filter-btn" data-filter="compost" aria-pressed="false">Compost</button>
         </div>
 
         <!-- Product grid -->
         <div class="products-grid" id="products-grid">
 
-          <!-- 1. Hardwood Mulch -->
+          <!-- 1. Dark Chocolate Brown -->
+          <div class="product-card reveal" data-category="mulch">
+            <div class="product-card__image product-img--hardwood">
+              <span class="product-card__badge">Popular</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Dark Chocolate Brown</h3>
+              <p class="product-card__desc">Rich, dark brown mulch that provides a clean, classic look for garden beds. A timeless choice that complements any landscape design.</p>
+              <span class="product-card__coverage">1 yd covers ~160 sq ft at 2" depth</span>
+              <div class="product-card__price">$55 <span>/ cubic yard</span></div>
+              <div class="product-card__actions">
+                <a href="contact.html" class="btn btn--primary btn--sm">Order Now</a>
+                <a href="contact.html" class="service-card__link" style="font-size:.85rem;">Get a Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Natural Hardwood Mulch -->
           <div class="product-card reveal" data-category="mulch">
             <div class="product-card__image product-img--hardwood">
               <span class="product-card__badge">Best Seller</span>
@@ -115,7 +122,7 @@
             </div>
           </div>
 
-          <!-- 2. Black Dyed Mulch -->
+          <!-- 3. Black Dyed Mulch -->
           <div class="product-card reveal" data-category="mulch">
             <div class="product-card__image product-img--black">
               <span class="product-card__badge">Popular</span>
@@ -132,7 +139,22 @@
             </div>
           </div>
 
-          <!-- 3. Red Dyed Mulch -->
+          <!-- 4. Gold Dyed Mulch -->
+          <div class="product-card reveal" data-category="mulch">
+            <div class="product-card__image product-img--cedar"></div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Gold Dyed Mulch</h3>
+              <p class="product-card__desc">Bright, golden-toned mulch that adds warmth and contrast to any landscape. Colorfast, non-toxic dye stays vibrant all season long.</p>
+              <span class="product-card__coverage">1 yd covers ~160 sq ft at 2" depth</span>
+              <div class="product-card__price">$55 <span>/ cubic yard</span></div>
+              <div class="product-card__actions">
+                <a href="contact.html" class="btn btn--primary btn--sm">Order Now</a>
+                <a href="contact.html" class="service-card__link" style="font-size:.85rem;">Get a Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Red Dyed Mulch -->
           <div class="product-card reveal" data-category="mulch">
             <div class="product-card__image product-img--red"></div>
             <div class="product-card__body">
@@ -147,114 +169,16 @@
             </div>
           </div>
 
-          <!-- 4. Cedar Mulch -->
+          <!-- 6. Western Cedar -->
           <div class="product-card reveal" data-category="mulch">
             <div class="product-card__image product-img--cedar">
               <span class="product-card__badge">Natural Pest Repellent</span>
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__name">Aromatic Cedar Mulch</h3>
+              <h3 class="product-card__name">Western Cedar</h3>
               <p class="product-card__desc">Natural aromatic cedar that repels insects while adding a warm, golden tone to your beds. Slower to decompose than hardwood — longer-lasting coverage.</p>
               <span class="product-card__coverage">1 yd covers ~160 sq ft at 2" depth</span>
               <div class="product-card__price">$65 <span>/ cubic yard</span></div>
-              <div class="product-card__actions">
-                <a href="contact.html" class="btn btn--primary btn--sm">Order Now</a>
-                <a href="contact.html" class="service-card__link" style="font-size:.85rem;">Get a Quote</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5. Playground Mulch -->
-          <div class="product-card reveal" data-category="mulch">
-            <div class="product-card__image product-img--playground"></div>
-            <div class="product-card__body">
-              <h3 class="product-card__name">Playground Wood Chip Mulch</h3>
-              <p class="product-card__desc">ASTM-compliant engineered wood fiber mulch designed for playgrounds and recreational areas. Provides excellent fall protection and drainage.</p>
-              <span class="product-card__coverage">Install at 6–9" depth for safety compliance</span>
-              <div class="product-card__price">$75 <span>/ cubic yard</span></div>
-              <div class="product-card__actions">
-                <a href="contact.html" class="btn btn--primary btn--sm">Order Now</a>
-                <a href="contact.html" class="service-card__link" style="font-size:.85rem;">Get a Quote</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 6. Rubber Mulch -->
-          <div class="product-card reveal" data-category="mulch">
-            <div class="product-card__image product-img--rubber">
-              <span class="product-card__badge">Long Lasting</span>
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__name">Rubber Mulch (Recycled)</h3>
-              <p class="product-card__desc">Made from 100% recycled rubber tires. Won't decompose, wash away, or attract insects. Ideal for high-traffic areas and playgrounds needing a permanent solution.</p>
-              <span class="product-card__coverage">1 yd covers ~120 sq ft at 2" depth</span>
-              <div class="product-card__price">$90 <span>/ cubic yard</span></div>
-              <div class="product-card__actions">
-                <a href="contact.html" class="btn btn--primary btn--sm">Order Now</a>
-                <a href="contact.html" class="service-card__link" style="font-size:.85rem;">Get a Quote</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 7. Premium Topsoil -->
-          <div class="product-card reveal" data-category="topsoil">
-            <div class="product-card__image product-img--topsoil">
-              <span class="product-card__badge">Top Rated</span>
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__name">Premium Screened Topsoil</h3>
-              <p class="product-card__desc">Loamy, screened topsoil with excellent drainage and nutrient retention. Ideal for lawn leveling, new garden installation, and grading projects.</p>
-              <span class="product-card__coverage">1 yd covers ~100 sq ft at 3" depth</span>
-              <div class="product-card__price">$50 <span>/ cubic yard</span></div>
-              <div class="product-card__actions">
-                <a href="contact.html" class="btn btn--primary btn--sm">Order Now</a>
-                <a href="contact.html" class="service-card__link" style="font-size:.85rem;">Get a Quote</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 8. Garden Compost -->
-          <div class="product-card reveal" data-category="compost">
-            <div class="product-card__image product-img--compost">
-              <span class="product-card__badge">Organic</span>
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__name">Premium Garden Compost</h3>
-              <p class="product-card__desc">Fully matured, rich organic compost that dramatically improves soil structure, drainage, and fertility. Perfect for amending existing soil or creating new garden beds.</p>
-              <span class="product-card__coverage">Amend at 2–3" worked into top 8" of soil</span>
-              <div class="product-card__price">$60 <span>/ cubic yard</span></div>
-              <div class="product-card__actions">
-                <a href="contact.html" class="btn btn--primary btn--sm">Order Now</a>
-                <a href="contact.html" class="service-card__link" style="font-size:.85rem;">Get a Quote</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 9. Pea Gravel -->
-          <div class="product-card reveal" data-category="gravel">
-            <div class="product-card__image product-img--gravel"></div>
-            <div class="product-card__body">
-              <h3 class="product-card__name">Pea Gravel</h3>
-              <p class="product-card__desc">Smooth, rounded pea-sized gravel in natural gray and tan tones. Popular for pathways, dog runs, drainage areas, and decorative ground cover. Easy to walk on and long-lasting.</p>
-              <span class="product-card__coverage">1 yd covers ~100 sq ft at 3" depth</span>
-              <div class="product-card__price">$70 <span>/ cubic yard</span></div>
-              <div class="product-card__actions">
-                <a href="contact.html" class="btn btn--primary btn--sm">Order Now</a>
-                <a href="contact.html" class="service-card__link" style="font-size:.85rem;">Get a Quote</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 10. River Rock -->
-          <div class="product-card reveal" data-category="gravel">
-            <div class="product-card__image product-img--river-rock">
-              <span class="product-card__badge">Decorative</span>
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__name">River Rock</h3>
-              <p class="product-card__desc">Beautiful natural river stone in mixed gray and tan tones. Excellent for dry creek beds, drainage swales, water features, and low-maintenance landscape areas.</p>
-              <span class="product-card__coverage">1 yd covers ~80 sq ft at 3" depth</span>
-              <div class="product-card__price">$85 <span>/ cubic yard</span></div>
               <div class="product-card__actions">
                 <a href="contact.html" class="btn btn--primary btn--sm">Order Now</a>
                 <a href="contact.html" class="service-card__link" style="font-size:.85rem;">Get a Quote</a>
@@ -283,7 +207,7 @@
           </div>
           <div style="flex-shrink:0;text-align:center;">
             <p style="font-size:.88rem;color:var(--color-text-light);margin-bottom:.5rem;">Call for bulk pricing</p>
-            <a href="tel:+15555551234" class="big-phone" style="display:block;margin-bottom:1rem;">(555) 555-1234</a>
+            <a href="tel:+16129991517" class="big-phone" style="display:block;margin-bottom:1rem;">(612) 999-1517</a>
             <a href="contact.html" class="btn btn--primary">Request Bulk Quote</a>
           </div>
         </div>
@@ -396,7 +320,7 @@
         <div class="text-center mt-4">
           <p style="font-size:.93rem;color:var(--color-text-light);">
             Still have questions? <a href="contact.html" style="color:var(--color-primary);font-weight:700;">Contact our team</a>
-            or call us at <a href="tel:+15555551234" style="color:var(--color-primary);font-weight:700;">(555) 555-1234</a>.
+            or call us at <a href="tel:+16129991517" style="color:var(--color-primary);font-weight:700;">(612) 999-1517</a>.
           </p>
         </div>
       </div>
@@ -412,7 +336,7 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="index.html" class="nav__logo" style="display:inline-flex;color:var(--color-white);margin-bottom:1rem;">
-            <img src="../images/logo.png" alt="Freshly Mulched" style="height:50px;width:90px;object-fit:contain;border-radius:4px;" />
+            <img src="../images/logo.jpg" alt="Freshly Mulched" style="height:50px;width:90px;object-fit:contain;border-radius:4px;" />
             Freshly Mulched
           </a>
           <p class="footer__tagline">Premium mulch delivery and landscaping services. Quality materials, reliable delivery, beautiful results.</p>
@@ -424,28 +348,28 @@
             <li><a href="products.html" class="footer__link">Products</a></li>
             <li><a href="about.html" class="footer__link">About Us</a></li>
             <li><a href="contact.html" class="footer__link">Contact</a></li>
+            <li><a href="https://order.freshlymulched.com" class="footer__link">Order Mulch Delivery</a></li>
+            <li><a href="https://book.freshlymulched.com/quote" class="footer__link">Request an Installation Quote</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="footer__heading">Products</h3>
+          <h3 class="footer__heading">Our Services</h3>
           <ul class="footer__links">
-            <li><a href="products.html" class="footer__link">Hardwood Mulch</a></li>
-            <li><a href="products.html" class="footer__link">Black Dyed Mulch</a></li>
-            <li><a href="products.html" class="footer__link">Red Dyed Mulch</a></li>
-            <li><a href="products.html" class="footer__link">Premium Topsoil</a></li>
-            <li><a href="products.html" class="footer__link">Garden Compost</a></li>
-            <li><a href="products.html" class="footer__link">Pea Gravel</a></li>
+            <li><a href="https://order.freshlymulched.com" class="footer__link">Mulch Delivery</a></li>
+            <li><a href="https://book.freshlymulched.com/quote" class="footer__link">Mulch Installation</a></li>
+            <li><a href="https://book.freshlymulched.com/quote" class="footer__link">Commercial Services</a></li>
+            <li><a href="https://book.freshlymulched.com/quote" class="footer__link">Playground Mulch</a></li>
           </ul>
         </div>
         <div>
           <h3 class="footer__heading">Contact Us</h3>
           <div class="footer__contact-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span><a href="tel:+15555551234">(555) 555-1234</a></span>
+            <span><a href="tel:+16129991517">(612) 999-1517</a></span>
           </div>
           <div class="footer__contact-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span><a href="mailto:hello@freshlymulched.com">hello@freshlymulched.com</a></span>
+            <span><a href="mailto:info@freshlymulched.com">info@freshlymulched.com</a></span>
           </div>
           <div class="footer__contact-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
