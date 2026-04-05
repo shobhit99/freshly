@@ -239,13 +239,15 @@ h1, h2, h3, h4, h5, h6 {
 /* White outline variant for dark/image backgrounds */
 .hero .btn--outline,
 .footer .btn--outline,
-.section--dark .btn--outline {
+.section--dark .btn--outline,
+.cta-banner .btn--outline {
   color: var(--color-white);
   border-color: var(--color-white);
 }
 .hero .btn--outline:hover,
 .footer .btn--outline:hover,
-.section--dark .btn--outline:hover {
+.section--dark .btn--outline:hover,
+.cta-banner .btn--outline:hover {
   background: var(--color-white);
   color: var(--color-primary);
 }
@@ -348,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .nav__link {
@@ -396,19 +398,39 @@ h1, h2, h3, h4, h5, h6 {
 .nav__cta {
   background: var(--color-accent);
   color: var(--color-white) !important;
-  padding: .55rem 1.35rem;
+  padding: .5rem 1.1rem;
   border-radius: var(--radius-full);
   font-weight: 600;
-  font-size: .9rem;
+  font-size: .85rem;
+  white-space: nowrap;
   transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 
-.nav__cta::after { display: none !important; }
+.nav__cta__green {
+  background: var(--color-primary-light);
+  color: var(--color-white) !important;
+  padding: .5rem 1.1rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: .85rem;
+  white-space: nowrap;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.nav__cta::after,
+.nav__cta__green::after { display: none !important; }
 
 .nav__cta:hover {
   background: var(--color-accent-dark);
   transform: translateY(-1px);
   box-shadow: 0 4px 14px rgba(212,120,42,.4);
+  color: var(--color-white) !important;
+}
+
+.nav__cta__green:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(98, 152, 71, 0.4);
   color: var(--color-white) !important;
 }
 
