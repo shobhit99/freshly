@@ -1268,7 +1268,8 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .15;
   position: absolute;
   top: .5rem;
-  left: 1.25rem;
+  right: 1.25rem;
+  left: auto;
 }
 
 .testimonial-card__stars {
