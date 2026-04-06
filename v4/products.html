@@ -10,7 +10,7 @@
   <title>Products — Freshly Mulched</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght,600;0,700;1,600;1,700&family=Playfair+Display:ital,wght,600;0,700;0,800;1,600;1,700&family=Inter:wght;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
@@ -31,7 +31,7 @@
         <li><a href="calculator.html" class="nav__link">Calculator</a></li>
         <li><a href="contact.html" class="nav__link">Contact</a></li>
         <li><a href="contact.html" class="nav__link nav__cta">Order mulch delivery</a></li>
-        <li><a href="contact.html" class="nav__link nav__cta__green">Request an Installation Quote</a></li>
+        <li><a href="contact.html#contact-form" class="nav__link nav__cta__green">Request an Installation Quote</a></li>
       </ul>
       <button class="nav__hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -49,7 +49,7 @@
       <a href="contact.html" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">Order mulch delivery</a>
     </div>
     <div class="nav__mobile-cta">
-      <a href="contact.html" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">Request an Installation Quote</a>
+      <a href="contact.html#contact-form" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">Request an Installation Quote</a>
     </div>
   </div>
 
@@ -81,9 +81,7 @@
           <span class="section-label">Browse &amp; Order</span>
           <h2 class="section-title" id="products-title">Quality Materials for Every Project</h2>
           <p class="section-subtitle">
-            All products are sold by the cubic yard and delivered fresh. Call us at
-            <a href="tel:+16129991517" style="color:var(--color-primary);font-weight:700;">(612) 999-1517</a>
-            to calculate how much you need.
+            All products are sold by the cubic yard and delivered fresh.
           </p>
         </div>
 
@@ -205,7 +203,7 @@
         <div style="display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;flex-wrap:wrap;" class="reveal">
           <div>
             <span class="section-label">Bulk Savings</span>
-            <h2 class="section-title" id="bulk-cta-title" style="margin-bottom:.75rem;">Ordering 25+ Yards? Enjoy volume discount.</h2>
+            <h2 class="section-title" id="bulk-cta-title" style="margin-bottom:.75rem;">Ordering 25+ Yards? Enjoy a volume discount.</h2>
             <p style="font-size:1rem;color:var(--color-text-light);line-height:1.75;max-width:560px;">
               Contractors, landscapers, and large residential projects qualify for bulk pricing.
             </p>
@@ -218,114 +216,20 @@
       </div>
     </section>
 
+
     <!-- ═══════════════════════════════════════════
-         PRODUCT FAQ (accordion)
+         CTA BANNER
     ═══════════════════════════════════════════ -->
-    <section class="section" aria-labelledby="faq-title">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Common Questions</span>
-          <h2 class="section-title" id="faq-title">Product FAQ</h2>
-          <p class="section-subtitle">Everything you need to know about our materials before you order.</p>
-        </div>
-
-        <div class="faq-list" style="max-width:760px;margin-inline:auto;" role="list">
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false">
-              How much mulch do I need for my project?
-              <span class="faq-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-              </span>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <div class="faq-answer__inner">
-                A simple formula: multiply the length (ft) × width (ft) × depth (in inches) ÷ 324 = cubic yards needed.
-                For example, a 20×20 ft bed at 3" depth = 20 × 20 × 3 ÷ 324 ≈ 3.7 yards. We always recommend
-                rounding up by 10% to account for settling. Not sure? Call us and we'll help you calculate the
-                exact amount — no math required on your end.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false">
-              Is the dye in colored mulch safe for plants and pets?
-              <span class="faq-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-              </span>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <div class="faq-answer__inner">
-                Yes — all of our dyed mulches (black and red) use iron oxide or carbon-based colorants that are
-                completely non-toxic, safe for plants, pets, and children. These are the same pigments used in
-                many food-safe applications. The dye is colorfast and won't leach harmful chemicals into your soil
-                or water supply. Our products meet or exceed all EPA and USDA safety guidelines.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false">
-              What's the difference between mulch and compost?
-              <span class="faq-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-              </span>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <div class="faq-answer__inner">
-                Mulch is applied on top of the soil primarily to suppress weeds, retain moisture, and regulate
-                soil temperature. It can be organic (breaking down over time) or inorganic (rubber, stone).
-                Compost is a nutrient-rich, fully decomposed organic material that's worked into the soil to
-                improve its fertility and structure. For best results, many customers apply compost to the soil
-                first, then top-dress with mulch for both nutrition and weed suppression.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false">
-              How often should I refresh my mulch?
-              <span class="faq-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-              </span>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <div class="faq-answer__inner">
-                For natural hardwood mulch, plan to top-dress every 1–2 years as it decomposes and thins out.
-                Colored mulches may fade in intensity after 6–12 months, though they're still functional —
-                a fresh top layer restores color. Cedar mulch lasts 2–3 years due to its slower decomposition
-                rate. Rubber and stone mulches are essentially permanent and rarely need refreshing. We recommend
-                maintaining 2–3 inches of depth for optimal weed suppression.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false">
-              Do you offer delivery for small orders (1–2 yards)?
-              <span class="faq-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-              </span>
-            </button>
-            <div class="faq-answer" aria-hidden="true">
-              <div class="faq-answer__inner">
-                Yes! Our minimum order is 1 cubic yard and we deliver orders of any size throughout our service
-                area. Small orders (1–4 yards) incur a standard delivery fee of $35–$55 depending on distance.
-                Orders of 5+ yards qualify for free delivery within our primary service area. Same-day delivery
-                on small orders is subject to truck availability — call before 10 AM for the best chance of a
-                same-day slot. We can often accommodate next-day delivery for any size order.
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="text-center mt-4">
-          <p style="font-size:.93rem;color:var(--color-text-light);">
-            Still have questions? <a href="contact.html" style="color:var(--color-primary);font-weight:700;">Contact our team</a>
-            or call us at <a href="tel:+16129991517" style="color:var(--color-primary);font-weight:700;">(612) 999-1517</a>.
-          </p>
+    <section class="cta-banner" aria-labelledby="products-cta-title">
+      <div class="container" style="position:relative;z-index:1;">
+        <h2 class="cta-banner__title" id="products-cta-title">Ready to Transform Your Yard?</h2>
+        <p class="cta-banner__subtitle">
+          Get a free, no-obligation quote today. We'll help you find the right products and
+          create a beautiful outdoor space you'll love.
+        </p>
+        <div class="btn-group centered" style="justify-content:center;">
+          <a href="contact.html" class="btn btn--accent btn--lg">Order Mulch Delivery</a>
+          <a href="contact.html#contact-form" class="btn btn--outline btn--lg">Request an Installation Quote</a>
         </div>
       </div>
     </section>
@@ -343,7 +247,7 @@
             <img src="../images/logo.jpg" alt="Freshly Mulched" style="height:50px;width:90px;object-fit:contain;border-radius:4px;" />
             Freshly Mulched
           </a>
-          <p class="footer__tagline">Premium mulch delivery and landscaping services. Quality materials, reliable delivery, beautiful results.</p>
+          <p class="footer__tagline">Premium mulch delivery and Installation services. Quality materials, reliable delivery, beautiful results.</p>
         </div>
         <div>
           <h3 class="footer__heading">Quick Links</h3>

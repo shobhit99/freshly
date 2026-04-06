@@ -260,7 +260,7 @@
      9. STAT COUNTER ANIMATION
   ────────────────────────────────────────────── */
   function animateCounter(el, target, suffix) {
-    const duration = 1800;
+    const duration = target <= 10 ? 600 : 1800;
     const start = performance.now();
     const startVal = 0;
 
@@ -325,6 +325,22 @@
     slider.addEventListener('touchstart', (e) => { isDragging = true; setPosition(e.touches[0].clientX); }, { passive: true });
     slider.addEventListener('touchmove', (e) => { if (!isDragging) return; setPosition(e.touches[0].clientX); }, { passive: true });
     slider.addEventListener('touchend', () => { isDragging = false; });
+  });
+
+  /* ──────────────────────────────────────────────
+     11. HASH ANCHOR SCROLL ON PAGE LOAD
+  ────────────────────────────────────────────── */
+  window.addEventListener('load', function () {
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        setTimeout(function () {
+          const navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 88;
+          const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }, 100);
+      }
+    }
   });
 
 })();
