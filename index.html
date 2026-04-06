@@ -194,9 +194,21 @@
       .grid {
         grid-template-columns: 1fr;
         max-width: 560px;
+        gap: 20px;
+        padding-bottom: 60px;
       }
       .header {
-        padding: 60px 24px 40px;
+        padding: 48px 24px 32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        padding: 36px 16px 24px;
+      }
+      .grid {
+        gap: 16px;
+        padding: 0 16px 48px;
       }
     }
   </style>

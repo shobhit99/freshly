@@ -2360,3 +2360,40 @@ select.calc-input { cursor: pointer; }
   .calc-area-row { flex-wrap: wrap; }
   .calc-area-input { min-width: 40%; }
 }
+
+@media (max-width: 640px) {
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .page-hero {
+    padding: 6rem 0 2.5rem;
+  }
+
+  .contact-grid {
+    gap: 2rem;
+  }
+
+  .service-detail {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+}

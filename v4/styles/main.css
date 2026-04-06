@@ -31,7 +31,7 @@
   /* Sizing */
   --container-max: 1280px;
   --container-pad: clamp(1rem, 4vw, 2rem);
-  --nav-height:    70px;
+  --nav-height:    88px;
   --radius-sm:     6px;
   --radius-md:     12px;
   --radius-lg:     20px;
@@ -312,10 +312,19 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
+.nav__logo-badge {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  background: url('../../images/logo.jpg') center / 130% no-repeat;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
 .nav__logo {
   display: flex;
   align-items: center;
-  gap: .6rem;
+  gap: 0.3rem;
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 700;
@@ -2229,6 +2238,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 640px) {
+  .section {
+    padding-block: 2.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .page-hero {
+    padding-bottom: 2.5rem;
+  }
+
   .products-grid {
     grid-template-columns: 1fr;
   }
@@ -2256,6 +2277,14 @@ h1, h2, h3, h4, h5, h6 {
 
   .areas-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+
+  .service-detail {
+    padding-block: 2rem;
   }
 }
 
